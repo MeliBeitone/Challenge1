@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraChalleng#1</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <textarea id="cajaTexto" class="cajaTexto" type="text" placeholder="Ingrese el texto aqui"></textarea>
+    
+    <div class="cajaPadre" >
+        <div class="cajaHija" >
+        <img class="logo" src="assets/Vector.png" alt="logo">
+        </div>
+    </div>
+
+   
+    <div class="aclaracion">
+        <img class="aclaracion_icono" src="assets/Icono.png" alt="icono">
+        <p class="aclaracion_texto">Solo letras minusculas y sin acentos</p>
+    </div>
+  
+    <div class="botones" >
+        <button onclick="encriptar()" class="boton_E"> <div class="text1">Encriptar</div> </button>
+        <button onclick="desencriptar()" class="boton_D"> <div class="text2"> Desencriptar </div> </button>
+    </div>
+
+    <div id="rectangulo" class="rectangulo">  
+    </div>
+
+    <div id="cajaMensajes" class="cajaMensajes">
+        <p class="cajaMensajes-1" >Ningun mensaje fue encontrado</p>
+        <p class="cajaMensajes-2">Ingrese el texto que desees encriptar o descencriptar</p>
+    </div>
+
+    <img id="munieco" class="munieco" src="assets/Muñeco.png" alt="muñeco">
+
+    <div id="espacio"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,948 @@
+@media screen and (max-width: 480px){
+    body{
+        position: relative;
+        width: 375px;
+        height: 1550px;
+            
+        background: #F3F5FC;
+        overflow-x: hidden;
+    }
+    .cajaPadre{
+        position: absolute;
+        width: 30.43px;
+        height: 48.03px;
+        left: 16px;
+        top: 23.97px;
+    }
+    .logo{
+        position: absolute;
+        left: 4.27%;
+        right: 87.62%;
+        top: 1.4%;
+        bottom: 95.91%;
+    }
+    .rectangulo{ /*DIV donde se pone lo traducido*/
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        
+        position: absolute;
+        width: 358.5px;
+        height: 350px;
+        left: 15px;
+        top: 900px;
+        margin-bottom: 500px;
+                
+        background-color: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+    
+        color: #495057;
+        word-wrap: break-word;
+
+    }
+    .munieco{
+        display: none;
+    }
+    .cajaMensajes{ /* Div donde se guardan los mensajes de que no se ingreso ningun texto*/
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        
+        position: absolute;
+        height: 186px;
+        left: 55px;
+        top: 900px;
+
+        width: 355px;
+    }
+    .cajaMensajesMensaje-1{ /* Texto 1 "Ningun mensaje fue ingresado" */
+        width: 263px;
+        height: 58px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        
+        text-align: center;
+                
+        color: #343A40;
+                
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .cajaMensajesMensaje-2{ /* Texto 2 "Ingresa el texto que desees" */
+        width: 263px;
+        height: 48px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        
+        text-align: center;
+                
+        color: #495057;
+                
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        
+        position: absolute;
+        width: 355px;
+        height: 158px;
+        left: 16px;
+        top: 720px;
+    }
+    .boton_E{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        
+        width: 420px;
+        height: 67px;
+                
+        background: #0A3871;
+        border-radius: 24px;
+                
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+
+        cursor: pointer;
+    }
+    .text1{
+        width: 284px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        color: #FFFFFF;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .text2{
+        width: 284px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        color: #0A3871;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .boton_D{
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+
+        width: 420px;
+        height: 67px;
+
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+
+        cursor: pointer;
+    }
+    .aclaracion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        
+        position: absolute;
+        width: 229px;
+        height: 200px;
+        left: 16px;
+        top: 590px;        
+    }
+    .aclaracion_icono{
+        width: 16px;
+        height: 16px;
+                
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .aclaracion_texto{
+        width: 205px;
+        height: 18px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+
+        color: #495057;
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .cajaTexto{ /* Lugar donde se escribe */
+        position: absolute;
+        width: 415px;
+        height: 500px;
+        left: 16px;
+        top: 152px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        
+        color: #0A3871;
+    
+        resize: none;
+
+        word-wrap: break-word;
+        background-color: transparent;
+        color: #0A3871;
+        outline: none;
+
+        border: none;
+    }
+    ::placeholder{
+        color: #0A3871;
+    }
+    
+    .botonCopiar{
+        box-sizing: border-box;
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+
+        width: 250px;
+        height: 67px;
+
+        left: 105px;
+        top: 1200px;
+        position: absolute;
+
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .divCopiar{
+        height: 19px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        
+        /* Dark blue/dark-blue-300 */
+        
+        color: #0A3871;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
+    body{
+        position: relative;
+        width: 768px;
+        height: 1290px;
+
+        background: #E5E5E5;
+    }
+    .cajaPadre{
+        position: absolute;
+        width: 31.09px;
+        height: 50.58px;
+        left: 40px;
+        top: 73.42px;
+    }
+    .logo{
+        position: absolute;
+        left: 5.21%;
+        right: 90.74%;
+        top: 6.25%;
+        bottom: 89.8%;
+    }
+    .rectangulo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        
+        position: absolute;
+        width: 688px;
+        height: 200px;
+        left: 40px;
+        top: 960px;
+        
+        /* White */
+        
+        background: #FFFFFF;
+        /* shadow */
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        /* or 36px */
+    
+    
+        /* Gray/gray-400 */
+    
+        color: #495057;
+        word-wrap: break-word;
+
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    .munieco{
+        display: none;
+    }
+    .cajaMensajes{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+
+        width: 624px;
+        height: 69px;
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+
+        position: absolute;
+        top: 975px;
+        right: 50px;
+    }
+    .cajaMensajesMensaje-1{
+        width: 624px;
+        height: 29px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+
+        text-align: center;
+
+        color: #343A40;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .cajaMensajesMensaje-2{
+        width: 624px;
+        height: 24px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        text-align: center;
+
+        color: #495057;
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        left: 40px;
+        top: 870px;
+    }
+    .boton_E{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+
+        width: 332px;
+        height: 67px;
+
+        /* Dark blue/dark-blue-300 */
+
+        background: #0A3871;
+        border-radius: 24px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+
+        cursor: pointer;
+    }
+    .text1{
+        width: 284px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        color: #FFFFFF;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .text2{
+        width: 284px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        color: #0A3871;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .boton_D{
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+
+        width: 332px;
+        height: 67px;
+
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+
+        cursor: pointer;
+    }
+    .aclaracion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 40px;
+        top: 836px;
+    }
+    .aclaracion_icono{
+        width: 16px;
+        height: 16px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .aclaracion_texto{
+        width: 205px;
+        height: 18px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+
+        color: #495057;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .cajaTexto{ 
+        position: absolute;
+        width: 688px;
+        height: 480px;
+        left: 40px;
+        top: 240px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+
+        color: #0A3871;
+    
+        resize: none;
+        border: none;
+        word-wrap: break-word;
+        background-color: transparent;
+        color: #0A3871;
+        outline: none;
+    }
+    ::placeholder{
+        color: #0A3871;
+    }
+    
+    .botonCopiar{
+        box-sizing: border-box;
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+
+        width: 600px;
+        height: 67px;
+
+        right: 60px;
+        top: 1130px;
+        position: absolute;
+
+        /* Dark blue/dark-blue-300 */
+
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .divCopiar{
+        width: 576px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        /* Dark blue/dark-blue-300 */
+
+        color: #0A3871;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+}
+@media screen and (min-width: 767px){
+    body{
+        background: #E5E5E5;
+    }
+    .cajaPadre{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+    
+        position: absolute;
+        width: 120px;
+        height: 48px;
+        left: 40px;
+        top: 40px;
+    }
+    .cajaHija{
+        width: 120px;
+        height: 48px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .logo{
+        position: absolute;
+        left: 36.67%;
+        right: 37.43%;
+        top: 0%;
+        bottom: 0%;
+    }
+    .rectangulo{
+        position: absolute;
+        width: 400px;
+        height: 944px;
+        left: 1000px;
+        top: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    .munieco{
+        position: absolute;
+        width: 336px;
+        height: 304px;
+        left: 1032px;
+        top: 283px;
+    }
+    .cajaMensajes{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+        position: absolute;
+        width: 336px;
+        height: 122px;
+        left: 1032px;
+        top: 619px;
+    }
+    .cajaMensajes-1{
+        width: 336px;
+        height: 58px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .cajaMensajes-2{
+        width: 336px;
+        height: 48px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    
+        text-align: center;
+        color: #495057;
+    
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        
+        position: absolute;
+        width: 680px;
+        height: 67px;
+        left: 240px;
+        top: 885px;  
+    }
+    .boton_E{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        
+        width: 328px;
+        height: 67px;
+            
+        background: #0A3871;
+        border-radius: 24px;
+            
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    
+        cursor: pointer;
+    }
+    .text1{
+        width: 280px;
+        height: 19px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    
+        color: #FFFFFF;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .text2{
+        width: 280px;
+        height: 19px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    
+        color: #0A3871;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .boton_D{
+        box-sizing: border-box;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        
+        width: 328px;
+        height: 67px;
+            
+        background: #D8DFE8;
+        
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    
+        cursor: pointer;
+    }
+    .aclaracion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+    
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 240px;
+        top: 851px;
+    }
+    .aclaracion_icono{
+        width: 16px;
+        height: 16px;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .aclaracion_texto{
+        width: 205px;
+        height: 18px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .rectangulo{
+        position: absolute;
+        width: 400px;
+        height: 944px;
+        left: 1000px;
+        top: 40px;
+        
+        /* White */
+        
+        background: #FFFFFF;
+        /* shadow */
+        
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    .rectangulo{
+        position: absolute;
+        width: 336px;
+        height: 781px;
+        left: 1032px;
+        top: 72px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        /* or 36px */
+    
+    
+        /* Gray/gray-400 */
+    
+        color: #495057;
+        word-wrap: break-word;
+    }
+    .cajaTexto{ 
+        position: absolute;
+        width: 577px;
+        height: 600px;
+        left: 240px;
+        top: 168px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        /* identical to box height, or 48px */
+    
+        resize: none;
+        border: none;
+        word-wrap: break-word;
+        background-color: transparent;
+        color: #0A3871;
+        outline: none;
+    }
+    ::placeholder{
+        color: #0A3871;
+    }
+    
+    .botonCopiar{
+        box-sizing: border-box;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+    
+        position: absolute;
+        width: 336px;
+        height: 67px;
+        left: 1032px;
+        top: 885px;
+    
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+    
+        cursor: pointer;
+    }
+    .divCopiar{
+        width: 288px;
+        height: 19px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    
+        color: #0A3871;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+}
+
